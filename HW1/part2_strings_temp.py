@@ -40,7 +40,7 @@ temp_c = (temp_f - 32) * (5/9)
 print(temp_f, "degrees Fahrenheit is", temp_c, "degrees Celsius")
 
 # Convert Celsius to Fahrenheit
-celsius = 100
+celsius = 101
 # store in fahrenheit
 fahrenheit = (celsius * (9/5)) + 32
 
