@@ -9,3 +9,5 @@ for fruit in list1:
 list1.remove("banana")
 
 print(list1)
+
+print(int("123", 4))
