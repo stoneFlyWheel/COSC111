@@ -14,6 +14,7 @@ atoms_count = initial_atoms // (2 ** half_lives_count)
 # what fraction of a half-life is left?
 fraction_half_life = (elapsed_time - (half_lives_count * half_life)) / half_life
 
+# does pemdas work still?
 order_of_operations = (half_life + 1) ** 2 - elapsed_time // 10
 
 # results
