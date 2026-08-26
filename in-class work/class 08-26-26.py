@@ -1,0 +1,1 @@
+# i had to do some terminal-ing to figure out why my commits weren't working
