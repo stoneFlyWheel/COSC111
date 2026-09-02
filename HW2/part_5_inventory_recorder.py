@@ -19,8 +19,10 @@ def check_product(product_name, units_in_stock, daily_usage, lead_time_days, saf
     reorder_point = compute_reorder_point(daily_usage, lead_time_days, safety_stock)
     print(product_name + ":", "reorder point =", str(reorder_point) + ",", "in stock =", str(units_in_stock) + ",", "reorder needed =", needs_reorder(units_in_stock, reorder_point))
 
+# example case
 check_product("ExampleProduct(tm)", units_in_stock, daily_usage, lead_time_days, safety_stock)
 
+# go forth!
 for index in range(0, 3):
     check_product(products[index], stock_levels[index], usage_rates[index], lead_time_days, safety_stock)
 
