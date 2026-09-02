@@ -17,4 +17,5 @@ print("the total interest i paid in addition to my $25,000 is", round(total_inte
 # the postcondition for amount_owed is that it won't exceed principal * (1 + 0.5) ** years,
 # since the precondition is that annual_rate can't exceed 0.5.
 
-# it's better to have 
+# it's better to have total_interest call amount_owed, because if i had to change something in the content of
+# amount_owed, it'd be irritating to have to edit it twice because it's also in another function!
