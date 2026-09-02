@@ -10,4 +10,5 @@ list1.remove("banana")
 
 print(list1)
 
+# 123 in base 4
 print(int("123", 4))
