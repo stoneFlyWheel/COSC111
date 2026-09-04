@@ -14,7 +14,7 @@ def polyline(n, length, angle):
 
 # use polyline to create a function for circles & arcs
 def arc(radius, angle):
-    # circumference * fraction of circle
+    # circumference * fraction of circle 
     arc_length = 2 * math.pi * radius * angle / 360
     n = 30
     length = arc_length / n
