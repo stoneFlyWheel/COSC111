@@ -1,5 +1,23 @@
+def is_even(n):
+    if n % 2 == 0:
+        return "even"
+    else:
+        return "odd"
+
 def classify_number(n):
-      # your code here 
+    message = ""
+
+    if n == 0:
+        message = message + "zero"
+    else:
+        if n > 0:
+            message = message +  "positive "
+        elif n < 0:
+            message = message +  "negative "
+        message = message + str(is_even(n))
+
+    return message
+
 
 # Test cases (no need to change anything below this line)
 print(classify_number(0))   # should print "zero"
