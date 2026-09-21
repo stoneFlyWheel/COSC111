@@ -14,7 +14,7 @@ def classify_number(n):
             message += "positive "
         elif n < 0:
             message += "negative "
-        message += str(is_even(n))
+        message += is_even(n)
 
     return message
 
