@@ -1,4 +1,4 @@
-# part A
+# part A --------
 
 def word_stats(text):
     word_list = text.split(" ")
@@ -28,8 +28,42 @@ def word_stats(text):
 
     return answer
 
-print(word_stats("to be or not to be, that is the question"))
+sample = "To be or not to be that is the question"
+print(word_stats(sample)) 
 
+# part B --------
 
+def classify_sentence(sentence):
+    # declare variables
+    word_list = sentence.split()
+    sentence_length = len(word_list)
 
+    last_word = word_list[-1]
+    # this looks silly, but this is the only way i could get it to work!
+    last_word_list = list(str(last_word))
+
+    # what i'm going to return
+    answer = ""
+
+    # get prefix
+    if last_word_list[-1] == "?":
+        answer += "question - "
+    elif last_word_list[-1] == "!":
+        answer += "exclamation - "
+    else:
+        pass
+
+    # get length
+    if sentence_length < 5:
+        answer += "short"
+    elif 5 <= sentence_length <= 10:
+        answer += "medium"
+    else:
+        answer += "long"
+
+    return answer
+
+print(classify_sentence("What to do today?"))
+print(classify_sentence("What a wonderful day it is today!"))
+print(classify_sentence("The beautiful Persian calico cat sat on the long, hairy, headstrong mat."))
 
