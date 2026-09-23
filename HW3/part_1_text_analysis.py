@@ -67,3 +67,7 @@ print(classify_sentence("What to do today?"))
 print(classify_sentence("What a wonderful day it is today!"))
 print(classify_sentence("The beautiful Persian calico cat sat on the long, hairy, headstrong mat."))
 
+# reflection
+# if i were to write one long conditional, if i made a mistake on one part of the logic,
+# i'd have to rewrite 5 versions of the same thing! plus, it's more complicated to read,
+# and it doesn't look as clean as doing it with two conditionals.
