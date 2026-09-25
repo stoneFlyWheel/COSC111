@@ -24,7 +24,7 @@ running = True
 while running:
     num = input("please enter a number: ")
     try:
-        num = float(num)
+        num = int(num)
         running = False
     except:
         print("Invalid input. Please enter a valid number.")
