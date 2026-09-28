@@ -15,6 +15,8 @@ while running:
                 pass
             count += 1
 
+        print("Done!")
+
         running = False
 
     except:
