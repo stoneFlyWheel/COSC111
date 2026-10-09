@@ -12,6 +12,7 @@ renfield_count = 0
 
 for line in reader:
     line = line.lower()
+    
     jonathan_count += line.count("jonathan")
     dracula_count += line.count("dracula")
     mina_count += line.count("mina")
