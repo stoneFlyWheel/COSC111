@@ -1,5 +1,6 @@
 #Part 1: open the text file for reading
 
+# this is how i have to do it on my computer! i hope it also works for you
 reader = open("COSC111/in-class assignments/dracula.txt", "r")
 
 #Part 2: initialize the following variables (will be used for counting names):
@@ -12,7 +13,7 @@ renfield_count = 0
 
 for line in reader:
     line = line.lower()
-    
+
     jonathan_count += line.count("jonathan")
     dracula_count += line.count("dracula")
     mina_count += line.count("mina")
