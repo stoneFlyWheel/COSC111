@@ -1,23 +1,28 @@
 def build_word_counts(text):
-    #1) set up a blank dictionary
-    
-    #2) split text into words (this will be a list because the split() method returns a list
+    word_dict = {}
 
-   #3) using a for loop, go through the words list
-          #a) convert each word to lower-case (so "Cat" and "cat" get counted as the same term) - use the lower() method
-          #b) remove punctuation - (".,!?;:\"'()") -  using the strip() method
+    word_list = text.split()
+    # shamelessly stolen from the internet v
+    stop_words = ["the", "and", "a", "to", "of", "in", "that", "it", "is", "was", "he", "for", "on", "are", "as", "with", "his", "they", "be", "at"]
 
-          #c) if word is in counts (the dictionary we're building): counts[word] = counts[word] +1
-          # otherwise: counts[word] =1
+    for word in word_list:
+        word = word.lower().strip(".,!?;:\"'()")
 
-   #4) after the for loop is done running, don't forget to return counts - this will enable the driver code to print out top 10 terms
- 
+        if word in stop_words:
+            continue
 
+        if word in word_dict:
+            word_dict[word] += 1
+        else:
+            word_dict[word] = 1
+
+    return word_dict
 
 
 # ----- Driver code (no need to modify)  -----
 
-infile = open("input.txt", "r")
+# the way provided on canvas doesn't work for my computer :( sorry
+infile = open("COSC111/in-class assignments/input.txt", "r")
 text = infile.read()
 infile.close()
 
