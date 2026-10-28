@@ -1,0 +1,13 @@
+This is a fairly long text file. It's not meant to be gibberish.
+
+I'm going to copy and paste some words on Canvas now.
+
+In this exercise, we will write a function that builds a dictionary of word counts from a block of text. A driver script is provided:
+
+1. Driver code reads a file named input.txt (you will need to create this file in the same folder as your .py program source code file)
+
+2. Driver code then calls your function, and prints the 10 most common words along with their counts.
+
+You do not need to modify this code.
+
+As a student of the university, I pledge that I will neither knowingly give nor receive any inappropriate assistance in academic work, thus affirming my own personal commitment to honor and integrity. 
