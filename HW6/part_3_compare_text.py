@@ -38,5 +38,5 @@ def compare_texts(text1, text2):
 text1 = "the quick brown fox jumps over the lazy dog"
 text2 = "the lazy cat sleeps all day"
 common, unique = compare_texts(text1, text2)
-print("Common words:", common)
-print("Unique words:", unique)
+print("common words:", common)
+print("unique words:", unique)
