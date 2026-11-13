@@ -17,6 +17,11 @@ prevents radioactive material from escaping into the environment.
 """
 
 KEYWORD_RESPONSES = {
+    # i added two new entries here
+    "reactor": "A nuclear reactor widely defines converting heat from radioactive "
+             "material into electricity.",
+    "uranium": "Uranium is a material that's used in nuclear reactors. It has to "
+             "be enriched in order to be more productive.",
     "scram": "A SCRAM immediately inserts all control rods to shut down the "
              "reactor as quickly as possible.",
     "meltdown": "A meltdown happens if fuel overheats and damages its cladding. "
